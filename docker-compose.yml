@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+   vpronginx:
+       image: nginx-lb
+       ports:
+         - "80:80"
+
+   vproapp:
+       image: tomcat-app
+       ports: 
+         - "8080:8080"
+
+   vprodb:
+       image: mysql-db
+       ports: 
+         - "3306:3306"

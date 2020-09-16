@@ -1,7 +1,7 @@
 version: '3.0'
 services:
    vpronginx:
-       image: nginx-lb
+       image: nginx:123
        ports:
          - "80:80"
 
